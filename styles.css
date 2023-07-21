@@ -5,7 +5,7 @@ body{
 }
 .page{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 100%;
 }
 /* navbar styling*/
@@ -27,8 +27,106 @@ body{
 .logo-container .logo-title, .logo-container i{
     font-weight: bold;
 }
-
 /*content styling*/
-.content{
+.right{
     background-color: red;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+}
+.content{
+    background-color: orange;
+}
+/*top bar styling*/
+.top-bar{
+    padding: 1rem 0rem 0rem 2rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+}
+.top-bar-left{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 1.5rem;
+}
+.search-bar-container{
+    display: grid;
+    grid-template-columns: 3% 97%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+.search-bar-container input{
+    width: 60%;
+    border: solid 1px transparent;
+    border-radius: 25px;
+    background-color: rgb(229, 227, 227);
+    height: 1.2rem;
+}
+.search-bar-container i{
+    color: grey;
+}
+.top-bar-right{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 50% 50%;
+    gap: 1.5rem;
+    row-gap: 3.5rem;
+}
+.top-bar-right-first-row{
+    display: grid;
+    grid-template-columns: 38% 38% 38%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: start;
+}
+.top-bar-right .profile-icon{
+    font-size: 3rem;
+    color: rgb(193, 193, 9);
+}
+.top-bar-right .bell-icon{
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+.top-bar-right-p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.top-bar-profile-p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.top-bar-right-second-row{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 100%;
+    justify-content: right;
+    column-gap: 2rem;
+}
+.top-bar-right-second-row-link{
+    width: 4rem;
+    height: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(33, 129, 184);
+    border-radius: 1rem;
+    color: white;
+    font-weight: normal;
+}
+.profile-icon2{
+    font-size: 4rem;
+    color: rgb(193, 193, 9);
+}
+.top-bar-profile{
+    display: grid;
+    grid-template-columns: 10% 30%;
+    grid-template-rows: 100%;
+}
+.top-bar-profile-text{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
 }
