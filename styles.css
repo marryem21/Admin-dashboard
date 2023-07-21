@@ -1,3 +1,12 @@
+:root{
+    --myBlue: rgb(33, 129, 184);
+    --myGrey: rgb(229, 227, 227);
+    --myYellow: rgb(193, 193, 9);
+    --myOrange: orange;
+    --myWhite: white;
+    --myBlack: black;
+    --darkGrey: grey;
+}
 body{
     margin: 0;
     padding:0;
@@ -5,18 +14,21 @@ body{
 }
 .page{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 100%;
     grid-template-rows: 100%;
+    justify-content: end;
 }
 /* navbar styling*/
 .navbar{
-    height: 98.2vh;
+    position: fixed;
+    width: 25vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    background-color: rgb(33, 129, 184);
+    background-color: var(--myBlue);
     align-items: start;
     padding:  0.8rem 1rem 0rem 1rem;
-    color: white;
+    color: var(--myWhite);
 }
 .logo-container, .primary-link-container, .secondary-link-container{
     display: grid;
@@ -29,22 +41,21 @@ body{
 }
 /*content styling*/
 .right{
-    background-color: red;
+    height: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 80%;
-}
-.content{
-    background-color: orange;
+    padding-left: 28vh;
 }
 /*top bar styling*/
 .top-bar{
     padding: 1rem 0rem 0rem 2rem;
-    background-color: white;
+    background-color: var(--myWhite);
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: 50% 50%;
     justify-content: center;
+    box-shadow:  4px 3px 0 rgba(0, 0, 0, 0.9)
 }
 .top-bar-left{
     display: grid;
@@ -62,11 +73,11 @@ body{
     width: 60%;
     border: solid 1px transparent;
     border-radius: 25px;
-    background-color: rgb(229, 227, 227);
+    background-color: var(--myGrey);
     height: 1.2rem;
 }
 .search-bar-container i{
-    color: grey;
+    color: var(--darkGrey);
 }
 .top-bar-right{
     display: grid;
@@ -84,11 +95,11 @@ body{
 }
 .top-bar-right .profile-icon{
     font-size: 3rem;
-    color: rgb(193, 193, 9);
+    color: var(--myYellow);
 }
 .top-bar-right .bell-icon{
     font-weight: bold;
-    color: black;
+    color: var(--myBlack);
     font-size: 1.5rem;
 }
 .top-bar-right-p{
@@ -111,14 +122,14 @@ body{
     height: 1rem;
     text-align: center;
     padding: 0.5rem;
-    background-color: rgb(33, 129, 184);
+    background-color: var(--myBlue);
     border-radius: 1rem;
-    color: white;
+    color: var(--myWhite);
     font-weight: normal;
 }
 .profile-icon2{
     font-size: 4rem;
-    color: rgb(193, 193, 9);
+    color: var(--myYellow);
 }
 .top-bar-profile{
     display: grid;
@@ -129,4 +140,56 @@ body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
+}
+/* content styling*/
+.content{
+    background-color: var(--myGrey);
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 90%;
+    align-items: center;
+}
+.projects-grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 92%;
+    height: 100%;
+    row-gap: 1rem;
+}
+.projects-grid-title{
+
+    padding-left: 9.5%;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.project-card{
+    background-color: var(--myWhite);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border-left: 0.5rem solid var(--myOrange);
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+    box-shadow:  2px 3px 0 rgba(50, 46, 46, 0.1)
+}
+.project-card-title{
+    font-weight: bold;
+}
+.project-card-p{
+    color: var(--darkGrey);
+    font-size: 0.9rem;
+    width: 70%;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-template-rows: 100%;
+    justify-content: end;
 }
